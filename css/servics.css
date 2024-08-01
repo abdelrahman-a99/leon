@@ -1,0 +1,108 @@
+/* start services */
+.services {
+    padding-top: 4rem;
+}
+
+.services .services-content {
+    margin-top: 6rem;
+}
+
+.services .services-content .service {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.services .services-content .service i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.services .services-content .service .text {
+    flex: 1;
+}
+
+.services .services-content .service .text h3 {
+    margin-bottom: 1rem;
+}
+
+.services .services-content .service .text p {
+    color: #333;
+    font-weight: 300;
+    line-height: 1.5;
+}
+/* end services */
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .services {
+        padding-top: 5rem;
+    }
+
+    .services .services-content {
+        margin-top: 10rem;
+    }
+
+    .services .services-content .service {
+        margin-bottom: 2.5rem;
+    }
+
+    .services .services-content .service i {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services {
+        padding-top: 7rem;
+    }
+
+    .services .services-content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .services .services-content .service {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .services .services-content .service i {
+        font-size: 1.75rem;
+        margin: 0.75rem 0;
+    }
+    
+    .services .services-content .service .text {
+        text-align: center;
+    }
+
+    .services .services-content .service .text p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1201px) {
+    .services {
+        padding-top: 5rem;
+    }
+
+    .services .services-content {
+        margin-top: 5.25rem;
+    }
+
+    .services .services-content .service i {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .services .services-content .service .text h3{
+        font-size: 1.5rem;
+    }
+
+    .services .services-content .service .text p {
+        font-size: 1.25rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

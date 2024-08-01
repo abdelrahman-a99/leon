@@ -1,0 +1,78 @@
+/* start portfolio */
+.portfolio {
+    padding: 60px 0 26px 0;
+    background-color: #f6f6f6;
+}
+
+.portfolio .portfolio-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.portfolio .portfolio-content .card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+    margin-top: 1rem;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.25;
+}
+/* end portfolio */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .portfolio .portfolio-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 100px 1rem 1rem 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio {
+        padding: 94px 0 26px 0;
+    }
+
+    .portfolio .portfolio-content {
+        margin: 100px 1.5rem 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .portfolio .portfolio-content .card .info h3 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio .portfolio-content .card .info p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+}

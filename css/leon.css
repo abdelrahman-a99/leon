@@ -1,0 +1,334 @@
+/* start of global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* start components */
+.special-heading {
+    color: #ebeced;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.special-heading+p {
+    color: #797979;
+    font-size: 1rem;
+    text-align: center;
+}
+/* end components */
+
+/* end of global rules */
+
+/* start header */
+header {
+    padding: 1rem 2rem;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header a {
+    color: black;
+}
+
+header i {
+    font-size: 1.75rem;
+    transition: 0.3s;
+}
+
+header i:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+    color: #10cab7;
+}
+
+header .links {
+    position: relative;
+    margin: auto 0;
+}
+
+header .links .bar-icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header .links .bar-icon span {
+    background-color: #333;
+    height: 2px;
+}
+
+header .links .bar-icon span:first-child {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+header .links .bar-icon span:nth-child(2) {
+    margin-bottom: 5px;
+    width: 60%;
+}
+
+header .links .bar-icon span:last-child {
+    width: 100%;
+}
+
+header .links ul {
+    border-radius: 5%;
+    list-style: none;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: -4px;
+    min-width: 125px;
+    top: calc(100% + 16px);
+    display: none;
+    z-index: 1;
+}
+
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+    position: absolute;
+    right: 8px;
+    top: -20px;
+}
+
+header .links:hover .bar-icon span:nth-child(2) {
+    width: 100%;
+    transition: .3s;
+}
+
+header .links:hover ul {
+    display: block;
+    border: 1px solid #ddd;
+}
+
+header .links ul li a {
+    display: block;
+    text-align: start;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+header .links ul li a:hover {
+    padding-left: 25px;
+}
+
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+/* end header */
+
+/* start landing section */
+.landing {
+    height: calc(100vh - 65.11px);
+}
+
+.landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.landing .intro-text h1 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #10cab7;
+}
+
+.landing .intro-text p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+    width: 280px;
+    min-width: 100%;
+}
+/* end landing section */
+
+/* start features */
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features .feat {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .feat i {
+    font-size: 26px;
+}
+
+.features .feat h3 {
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+
+.features .feat p {
+    line-height: 1.6;
+    color: #777;
+    font-size: 17px;
+    width: 80%;
+    margin: 0 auto;
+}
+/* end features */
+
+/* start footer */
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer span a {
+    font-weight: bold;
+    color: #10cab7;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+footer span a:hover,
+footer span a:active {
+    color: #08a399;
+    text-decoration: underline;
+}
+
+footer span a:visited {
+    color: #10cab7;
+}
+/* end footer */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    header i {
+        font-size: 2rem;
+    }
+
+    .special-heading {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .features .feat p {
+        width: 100%;
+    }
+
+    .features .feat i {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .special-heading {
+        font-size: 6rem;
+    }
+
+    .special-heading+p {
+        font-size: 1.5rem;
+    }
+
+    header i {
+        font-size: 3rem;
+    }
+
+    header .links .bar-icon {
+        width: 3rem;
+    }
+
+    header .links .bar-icon span {
+        height: 3px;
+    }
+
+    header .links .bar-icon span:first-child {
+        margin-bottom: 8px;
+    }
+
+    header .links .bar-icon span:nth-child(2) {
+        margin-bottom: 8px;
+    }
+
+    header .links ul {
+        right: 0px;
+        top: calc(100% + 26px);
+        min-width: 200px;
+    }
+
+    header .links ul::before {
+        border-width: 15px;
+        right: 12px;
+        top: -30px;
+    }
+
+    header .links ul li a {
+        font-size: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    header .links ul li a:hover {
+        padding-left: 2rem;
+    }
+
+    .landing .intro-text h1 {
+        font-size: 4rem;
+    }
+
+    .landing .intro-text p {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        width: 500px;
+    }
+
+    .features .feat i {
+        font-size: 32px;
+    }
+
+    .features .feat h3 {
+        font-size: 1.25rem;
+    }
+
+    .features .feat p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,148 @@
+/* start contact */
+.contact {
+    padding-top: 80px;
+    background-color: #f6f6f6;
+    min-height: calc(100vh - 145px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .info {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact .info .label {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: darkblue;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+}
+
+.contact .info .link {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #10cab7;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.contact .info .link:hover,
+.contact .info .link:active {
+    color: #08a399;
+    text-decoration: underline;
+}
+
+.contact .info .link:visited {
+    color: #10cab7;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.contact .info .social a i {
+    color: black;
+    transition: color 0.3s;
+}
+
+.contact .info .social a:visited i {
+    color: black;
+}
+
+.contact .info .social i {
+    margin-left: 1rem;
+    transition: 0.3s;
+}
+
+.contact .info .social i:hover {
+    /* color: #10cab7; */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contact .info .social i.bxl-youtube:hover {
+    color: #ff0000;
+}
+
+.contact .info .social i.bxl-facebook-square:hover {
+    color: #3b5998;
+}
+
+.contact .info .social i.bxl-twitter:hover {
+    color: #1da1f2;
+}
+
+/* end contact */
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 481px) {
+    .contact .info .label {
+        font-size: 1.5rem;
+    }
+
+    .contact .info .link {
+        font-size: 1.5rem;
+    }
+
+    .contact .info .social {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        min-height: calc(100vh - 150px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact {
+        padding-top: 71px;
+    }
+
+    .contact .info .label {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .contact {
+        min-height: calc(100vh - 169px);
+        padding-top: 40px;
+    }
+
+    .contact .info {
+        padding: 60px 0 30px 0;
+    }
+
+    .contact .info .label {
+        font-size: 2.5rem;
+    }
+
+    .contact .info .link {
+        font-size: 2rem;
+    }
+
+    .contact .info .social {
+        font-size: 1.75rem;
+    }
+
+    .contact .info .social i {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+}
